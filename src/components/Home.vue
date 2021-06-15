@@ -5,7 +5,7 @@
         <User>
             <template  v-slot:user="{ user }">
                 <div v-if="user">
-                    Logged in as {{ user.uid }}
+                    <UserProfile :user="user"/>.
                 </div>
                 <Login/>
             </template>
@@ -16,11 +16,13 @@
 <script>
 import Login from './Login'
 import User from './User'
+import UserProfile from './UserProfile'
 
 export default {
     components: {
         Login,
-        User
+        User,
+        UserProfile
     }
 }
 </script>
