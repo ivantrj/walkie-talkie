@@ -25,7 +25,7 @@
       class="buttin is-info"
       :class="{ 'is-loading': loading }"
     >
-      {{ user ? "Sign Up" : "Login" }}
+      {{ newUser ? "Sign Up" : "Login" }}
     </button>
 
     <p class="has-text-danger" v-if="errorMessage">{{errorMessage}}</p>
